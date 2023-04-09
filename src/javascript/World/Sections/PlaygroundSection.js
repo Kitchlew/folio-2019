@@ -213,7 +213,7 @@ export default class PlaygroundSection
         })
 
         // Reset label
-        this.bowling.areaLabelMesh = new THREE.Mesh(new THREE.PlaneBufferGeometry(2, 0.5), new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, color: 0xffffff, alphaMap: this.resources.items.areaResetTexture }))
+        this.bowling.areaLabelMesh = new THREE.Mesh(new THREE.PlaneBufferGeometry(2, 0.5), new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, color: 0x253862, alphaMap: this.resources.items.areaResetTexture }))
         this.bowling.areaLabelMesh.position.x = this.bowling.x
         this.bowling.areaLabelMesh.position.y = this.bowling.y
         this.bowling.areaLabelMesh.matrixAutoUpdate = false
