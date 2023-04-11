@@ -46,7 +46,7 @@ export default class Application
     {
         this.config = {}
         this.config.debug = window.location.hash === '#debug'
-        this.config.cyberTruck = window.location.hash === '#cybertruck'
+        //this.config.cyberTruck = window.location.hash === '#cybertruck'
         this.config.touch = false
 
         window.addEventListener('touchstart', () =>
@@ -119,11 +119,11 @@ export default class Application
 
         this.time.on('tick', () =>
         {
-            if(this.world && this.world.car)
+           /* if(this.world && this.world.car)
             {
                 this.camera.target.x = this.world.car.chassis.object.position.x
                 this.camera.target.y = this.world.car.chassis.object.position.y
-            }
+            }*/
         })
     }
 

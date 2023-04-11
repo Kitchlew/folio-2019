@@ -9,7 +9,7 @@ export default class Areas
         // Options
         this.config = _options.config
         this.resources = _options.resources
-        this.car = _options.car
+        //this.car = _options.car
         this.sounds = _options.sounds
         this.renderer = _options.renderer
         this.camera = _options.camera
@@ -87,7 +87,7 @@ export default class Areas
                         {
                             // Play out
                             this.mouse.currentArea.out()
-                            this.mouse.currentArea.testCar = this.mouse.currentArea.initialTestCar
+                           // this.mouse.currentArea.testCar = this.mouse.currentArea.initialTestCar
                         }
 
                         // Play in
@@ -101,7 +101,7 @@ export default class Areas
                 {
                     // Play out
                     this.mouse.currentArea.out()
-                    this.mouse.currentArea.testCar = this.mouse.currentArea.initialTestCar
+                    //this.mouse.currentArea.testCar = this.mouse.currentArea.initialTestCar
                     this.mouse.currentArea = null
                 }
             }
@@ -114,11 +114,11 @@ export default class Areas
             config: this.config,
             renderer: this.renderer,
             resources: this.resources,
-            car: this.car,
+            //car: this.car,
             sounds: this.sounds,
             time: this.time,
             hasKey: true,
-            testCar: true,
+            testCar: false,
             active: true,
             ..._options
         })

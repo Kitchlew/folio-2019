@@ -5,7 +5,7 @@ import Shadows from './Shadows.js'
 import Physics from './Physics.js'
 import Zones from './Zones.js'
 import Objects from './Objects.js'
-import Car from './Car.js'
+//import Car from './Car.js'
 import Areas from './Areas.js'
 import Tiles from './Tiles.js'
 import Walls from './Walls.js'
@@ -70,8 +70,8 @@ export default class
         this.setPhysics()
         this.setZones()
         this.setObjects()
-        this.setCar()
-        this.areas.car = this.car
+        //this.setCar()
+        //this.areas.car = this.car
         this.setTiles()
         this.setWalls()
         this.setSections()
@@ -102,14 +102,14 @@ export default class
                 }
             }
 
-            // Car
+            /*Car
             this.physics.car.chassis.body.sleep()
             this.physics.car.chassis.body.position.set(0, 0, 12)
 
             window.setTimeout(() =>
             {
                 this.physics.car.chassis.body.wakeUp()
-            }, 300)
+            }, 300)*/
 
             // Sound
             TweenLite.fromTo(this.sounds.engine.volume, 0.5, { master: 0 }, { master: 0.7, delay: 0.3, ease: Power2.easeIn })
@@ -333,7 +333,7 @@ export default class
             debug: this.debug,
             renderer: this.renderer,
             camera: this.camera,
-            car: this.car,
+            //car: this.car,
             sounds: this.sounds,
             time: this.time
         })
@@ -377,7 +377,7 @@ export default class
         // })
     }
 
-    setCar()
+    /*setCar()
     {
         this.car = new Car({
             time: this.time,
@@ -395,7 +395,7 @@ export default class
         })
         this.container.add(this.car.container)
     }
-
+*/
     setSections()
     {
         this.sections = {}
@@ -498,7 +498,7 @@ export default class
     {
         this.easterEggs = new EasterEggs({
             resources: this.resources,
-            car: this.car,
+            //car: this.car,
             walls: this.walls,
             objects: this.objects,
             materials: this.materials,

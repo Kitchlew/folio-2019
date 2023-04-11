@@ -19,7 +19,7 @@ export default class InformationSection
         this.container.matrixAutoUpdate = false
 
         this.setStatic()
-        this.setBaguettes()
+        //this.setBaguettes()
         this.setLinks()
         this.setActivities()
         this.setTiles()

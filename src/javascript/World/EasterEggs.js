@@ -6,7 +6,7 @@ export default class EasterEggs
     {
         // Options
         this.resources = _options.resources
-        this.car = _options.car
+        //this.car = _options.car
         this.walls = _options.walls
         this.objects = _options.objects
         this.materials = _options.materials
@@ -93,8 +93,8 @@ export default class EasterEggs
                 {
                     window.setTimeout(() =>
                     {
-                        const x = this.car.chassis.object.position.x + (Math.random() - 0.5) * 10
-                        const y = this.car.chassis.object.position.y + (Math.random() - 0.5) * 10
+                     //   const x = this.car.chassis.object.position.x + (Math.random() - 0.5) * 10
+                     //   const y = this.car.chassis.object.position.y + (Math.random() - 0.5) * 10
 
                         this.objects.add({
                             ...this.konamiCode.lemonOption,
@@ -337,9 +337,9 @@ export default class EasterEggs
             egg.object.container.children[0].material = _options.material
 
             // Collision callback
-            egg.collisionCallback = (_event) =>
+           /* egg.collisionCallback = (_event) =>
             {
-                // Collision with car
+                //Collision with car
                 if(_event.body === this.physics.car.chassis.body && !egg.found)
                 {
                     egg.found = true
@@ -367,7 +367,7 @@ Would you like to go on the subscription page?
                         }, 1000)
                     }, 600)
                 }
-            }
+            }*/
 
             // Listen to collide event
             egg.object.collision.body.addEventListener('collide', egg.collisionCallback)

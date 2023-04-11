@@ -18,13 +18,13 @@ export default class Area extends EventEmitter
         this.config = _options.config
         this.renderer = _options.renderer
         this.resources = _options.resources
-        this.car = _options.car
+        //this.car = _options.car
         this.sounds = _options.sounds
         this.time = _options.time
         this.position = _options.position
         this.halfExtents = _options.halfExtents
         this.hasKey = _options.hasKey
-        this.testCar = _options.testCar
+        //this.testCar = _options.testCar
         this.active = _options.active
 
         // Set up
@@ -34,7 +34,7 @@ export default class Area extends EventEmitter
         this.container.matrixAutoUpdate = false
         this.container.updateMatrix()
 
-        this.initialTestCar = this.testCar
+        //this.initialTestCar = this.testCar
         this.isIn = false
 
         this.setFloorBorder()
